@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  26 FEB 2018 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  26 FEB 2018 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -294,57 +294,39 @@ Overfull \vbox (190.58662pt too high) has occurred while \output is active []
 \tf@toc=\write3
 \openout3 = `kandi.toc'.
 
- [2]
-
-LaTeX Warning: Citation `erkio01' on page 1 undefined on input line 70.
-
-
-LaTeX Warning: Citation `erkiomakela96' on page 1 undefined on input line 70.
+ [2] [1] [2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 214.
 
 
-LaTeX Warning: Citation `erkio94' on page 1 undefined on input line 70.
-
-
-LaTeX Warning: Citation `verkamo92' on page 1 undefined on input line 70.
-
-
-Overfull \hbox (4.85663pt too wide) in paragraph at lines 72--74
-[]\T1/cmr/m/n/12 Tämän kir-joi-tuk-sen tu-ke-na so-pii käy-tet-tä-väk-si lai-to
-k-sen www-sivuilla jul-kais-tu L[]T[]X-
- []
-
-[1] [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 233.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 233.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 214.
  [4]
 
-LaTeX Warning: Citation `dantowsley90' on page 5 undefined on input line 302.
+LaTeX Warning: Citation `dantowsley90' on page 5 undefined on input line 283.
 
 
-LaTeX Warning: Citation `gannonetal89' on page 5 undefined on input line 303.
+LaTeX Warning: Citation `gannonetal89' on page 5 undefined on input line 284.
 
 
-LaTeX Warning: Citation `abiteboul' on page 5 undefined on input line 311.
+LaTeX Warning: Citation `abiteboul' on page 5 undefined on input line 292.
 
 
-LaTeX Warning: Citation `dietinger' on page 5 undefined on input line 311.
+LaTeX Warning: Citation `dietinger' on page 5 undefined on input line 292.
 
 
-LaTeX Warning: Citation `bray' on page 5 undefined on input line 313.
+LaTeX Warning: Citation `bray' on page 5 undefined on input line 294.
 
-[5]
-Overfull \hbox (2.30772pt too wide) in paragraph at lines 331--334
+
+Overfull \hbox (2.30772pt too wide) in paragraph at lines 312--315
 \T1/cmr/m/n/12 1 (1997), 68-88. Myös http://link.springer.de/link/service/journ
 als/00799/bibs
  []
 
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
@@ -356,28 +338,28 @@ Package epstopdf Info: Source file: <kuvaesimerkki.eps>
 (epstopdf)                    size: 7234 bytes
 (epstopdf)             Command: <repstopdf --outfile=kuvaesimerkki-eps-converte
 d-to.pdf kuvaesimerkki.eps>
-(epstopdf)             \includegraphics on input line 518.
+(epstopdf)             \includegraphics on input line 499.
 Package epstopdf Info: Output file is already uptodate.
-<kuvaesimerkki-eps-converted-to.pdf, id=43, 361.35pt x 252.945pt>
+<kuvaesimerkki-eps-converted-to.pdf, id=39, 361.35pt x 252.945pt>
 File: kuvaesimerkki-eps-converted-to.pdf Graphic file (type pdf)
 
 <use kuvaesimerkki-eps-converted-to.pdf>
 Package pdftex.def Info: kuvaesimerkki-eps-converted-to.pdf used on input line 
-518.
+499.
 (pdftex.def)             Requested size: 384.1096pt x 268.8769pt.
- [8 <./kuvaesimerkki-eps-converted-to.pdf>] [9]
+ [7] [8 <./kuvaesimerkki-eps-converted-to.pdf>]
 No file kandi.bbl.
-[10] [1] (./kandi.aux)
+[9] [1] (./kandi.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3078 strings out of 493029
- 42111 string characters out of 6136234
- 117001 words of memory out of 5000000
- 6546 multiletter control sequences out of 15000+600000
- 15438 words of font info for 40 fonts, out of 8000000 for 9000
+ 3072 strings out of 493029
+ 42047 string characters out of 6136234
+ 115998 words of memory out of 5000000
+ 6541 multiletter control sequences out of 15000+600000
+ 14674 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,25p,441b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -385,13 +367,12 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on kandi.pdf (14 pages, 182953 bytes).
+ype1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on kandi.pdf (13 pages, 179708 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
