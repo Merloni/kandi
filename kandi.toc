@@ -1,5 +1,7 @@
 \babel@toc {finnish}{}
 \contentsline {section}{\numberline {1}Johdanto}{1}
-\contentsline {section}{\numberline {2}Merkintunnistuksen historia}{1}
-\contentsline {subsection}{\numberline {2.1}Historia 1}{1}
-\contentsline {section}{\numberline {3}Koneoppimisen sovelluksia merkintunnistuksessa}{1}
+\contentsline {section}{\numberline {2}Merkintunnistus yleisesti}{2}
+\contentsline {subsection}{\numberline {2.1}Merkintunnistuksen p\"a\"apiirteet}{2}
+\contentsline {subsection}{\numberline {2.2}Merkintunnistuksen historiaa}{3}
+\contentsline {subsection}{\numberline {2.3}OCR}{3}
+\contentsline {section}{\numberline {3}Koneoppimisen sovelluksia merkintunnistuksessa}{3}
