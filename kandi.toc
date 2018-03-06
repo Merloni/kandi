@@ -1,7 +1,13 @@
-\babel@toc {finnish}{}
+\select@language {finnish}
 \contentsline {section}{\numberline {1}Johdanto}{1}
 \contentsline {section}{\numberline {2}Merkintunnistus yleisesti}{2}
 \contentsline {subsection}{\numberline {2.1}Merkintunnistuksen p\"a\"apiirteet}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Tiedoston siirt\"aminen koneelle}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}Tiedoston esiprosessointi}{2}
+\contentsline {subsubsection}{\numberline {2.1.3}Hahmotunnistus}{3}
+\contentsline {subsubsection}{\numberline {2.1.4}Ominaisuuksien perusteella tunnistaminen}{3}
+\contentsline {subsubsection}{\numberline {2.1.5}Luokittelu}{3}
 \contentsline {subsection}{\numberline {2.2}Merkintunnistuksen historiaa}{3}
-\contentsline {subsection}{\numberline {2.3}OCR}{3}
-\contentsline {section}{\numberline {3}Koneoppimisen sovelluksia merkintunnistuksessa}{3}
+\contentsline {subsection}{\numberline {2.3}OCR ja optical word recognition}{4}
+\contentsline {subsection}{\numberline {2.4}ICR ja intelligent word recognition(IWR)}{4}
+\contentsline {section}{\numberline {3}Koneoppimisen sovelluksia merkintunnistuksessa}{4}
