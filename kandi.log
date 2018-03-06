@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  6 MAR 2018 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  6 MAR 2018 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,7 +295,7 @@ Overfull \vbox (190.58662pt too high) has occurred while \output is active []
 \openout3 = `kandi.toc'.
 
  [2] [1]
-Overfull \hbox (24.83841pt too wide) in paragraph at lines 63--64
+Overfull \hbox (24.83841pt too wide) in paragraph at lines 64--65
 \T1/cmr/m/n/12 Ensimmäinen vai-he teks-tin saa-mi-ses-sa tie-to-ko-neen kä-si-t
 el-tä-vään ASCII-merkistömuotoon
  []
@@ -304,10 +304,10 @@ el-tä-vään ASCII-merkistömuotoon
 No file kandi.bbl.
 [4] [5] (./kandi.aux) ) 
 Here is how much of TeX's memory you used:
- 3036 strings out of 493029
- 41412 string characters out of 6136234
- 115995 words of memory out of 5000000
- 6511 multiletter control sequences out of 15000+600000
+ 3043 strings out of 493029
+ 41505 string characters out of 6136234
+ 114995 words of memory out of 5000000
+ 6518 multiletter control sequences out of 15000+600000
  13990 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,25p,822b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -318,7 +318,7 @@ sr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts
 er/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></us
 r/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on kandi.pdf (8 pages, 141797 bytes).
+Output written on kandi.pdf (8 pages, 142453 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
