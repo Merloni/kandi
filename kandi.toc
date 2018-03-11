@@ -15,6 +15,6 @@
 \contentsline {subsection}{\numberline {3.1}\"Alyk\"as merkintunnistus}{4}
 \contentsline {subsection}{\numberline {3.2}\"Alyk\"as sanantunnistus}{4}
 \contentsline {section}{\numberline {4}Koneoppimisen sovelluksia merkintunnistuksessa}{4}
-\contentsline {subsection}{\numberline {4.1}Sovellus 1}{4}
-\contentsline {subsection}{\numberline {4.2}Sovellus 2}{4}
+\contentsline {subsection}{\numberline {4.1}Sovellus 1}{5}
+\contentsline {subsection}{\numberline {4.2}Sovellus 2}{5}
 \contentsline {subsection}{\numberline {4.3}Sovellus 3}{5}
