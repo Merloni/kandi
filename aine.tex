@@ -1,6 +1,7 @@
-
+% kielivalinta finnish, swedish, english
 \documentclass[finnish]{tktltiki}
-
+% poista sana gradu niin saat arvostelupaikkamerkinnät kansilehdelle
+%\documentclass[finnish]{tktltiki}
 \usepackage{epsfig}
 \usepackage{subfigure}
 \usepackage{url}
@@ -12,7 +13,7 @@
 \singlespacing
 
 
-\title{Koneoppiminen merkintunnistuksessa}
+\title{Koneoppimisen sovellukset älykkäässä merkintunnistuksessa}
 \author{Tuomo Salmenkivi}
 \date{\today}
 
@@ -20,6 +21,9 @@
 
 \numberofpagesinformation{\numberofpages\ sivua + \numberofappendixpages\ liitesivua}
 
+\classification{\protect{\ \\
+\  General and reference $\rightarrow$ Document types  $\rightarrow$ Surveys and overviews\  \\
+\  Applied computing  $\rightarrow$ Document management and text processing  $\rightarrow$ Document management  $\rightarrow$ Text editing\ }}
 
 
 
@@ -53,10 +57,10 @@ Keskityn tässä tutkielmassa käsittelemään aluksi optisen tekstintunnistuksen käy
 \section{Merkintunnistus yleisesti}
 
 \subsection{Merkintunnistuksen historiaa}
-
+TODO Historical Review of OCR reserach and development
 
 Varsinainen tekstintunnistustamisen tutkimus sellaisenaan kun se tänä päivänä tunnetaan alkoi 1950-luvulla tarpeesta tunnistaa tekstiä pankkisekeissä. Alustavassa sekkien merkintunnistuksessa käytettiin apuna rautaoksidia sisältävää mustetta, jolloin erityisen lukulaitteen lukupää kykeni tunnistamaan merkit niiden magneettisuuden perusteella. 
-Tätä kutsittiin MICR-teknologiaksi (Magnetic Ink Character Recognition). MICR-teknologiassa käytettiin tyypillisesti kirjaisimia E-13B sekä CMC-7. Vakiokirjaisimien käyttäminen oli etenkin varhaisvaiheen merkintunnistuksessa äärimmäisen tärkeää, sillä kirjaisimen pitäminen standardina paransi tarkkuutta ja sitä kautta luotettavuutta sekä MICR- että  myöhemmin myös OCR-teknologioissa.\cite{smori}
+Tätä kutsittiin MICR-teknologiaksi (Magnetic Ink Character Recognition). MICR-teknologiassa käytettiin tyypillisesti kirjaisimia E-13B sekä CMC-7. Vakiokirjaisimien käyttäminen oli etenkin varhaisvaiheen merkintunnistuksessa äärimmäisen tärkeää, sillä kirjaisimen pitäminen standardina paransi tarkkuutta ja sitä kautta luotettavuutta sekä MICR- että  myöhemmin myös OCR-teknologioissa.
 
 Varsinainen OCR-teknologia yleistyi vasta 1960-luvulla jota varten kehitettiin omat erityiset kirjaisimet, OCR-A sekä OCR-B.
 
@@ -72,27 +76,18 @@ Ensimmäisen vaiheen jälkeen koneella on nyt käytössään digitaalisessa muodossa o
 
 \subsubsection{Tiedoston esiprosessointi}
 
-Nykyisissä merkintunnistusjärjestelmissä on usein erilaisia esiprosessointivaiheita, joiden tarkoituksena on parantaa merkintunnistuksen tarkkuutta. Tällaisia prosesseja ovat esimerkiksi skannatun dokumentin suoruuden korjaaminen, kuvassa esiintyvän metelin poistaminen tai kuvasuuhteen ja skaalan normalisointi. Myös eräs tyypillinen vaihe merkintunnistuksessa on kuvan siirtäminen harmaaväriskaala- tai värikuvasta mustavalkoiseksi, jolloin valkoinen tausta voidaan erottaa mustasta tekstistä. Tällöin ohjelmiston tarvitsee analysoida pelkästään mustaa osaa ja prosessi helpottuu. Kuvan muuttaminen binäärikuvaksi, jossa on siis vain kaksi väriä, onkin usealle merkintunnistusjärjestelmälle välttämätön vaihe, sillä suuri osa kaupallisista merkintunnistusjärjestelmistä toimii vain binäärikuvilla. \cite{surveyov}
+Nykyisissä merkintunnistusjärjestelmissä on usein erilaisia esiprosessointivaiheita, joiden tarkoituksena on parantaa merkintunnistuksen tarkkuutta. Tällaisia prosesseja ovat esimerkiksi skannatun dokumentin suoruuden korjaaminen, kuvassa esiintyvän metelin poistaminen tai kuvasuuhteen ja skaalan normalisointi. Myös eräs tyypillinen vaihe merkintunnistuksessa on kuvan siirtäminen harmaaväriskaala- tai värikuvasta mustavalkoiseksi, jolloin valkoinen tausta voidaan erottaa mustasta tekstistä. Tällöin ohjelmiston tarvitsee analysoida pelkästään mustaa osaa ja prosessi helpottuu. Kuvan muuttaminen binäärikuvaksi, jossa on siis vain kaksi väriä, onkin usealle merkintunnistusjärjestelmälle välttämätön vaihe, sillä suuri osa kaupallisista merkintunnistusjärjestelmistä toimii vain binäärikuvilla. 
 
-Metelin poistaminen on esiprosessoinnin vaihe, jossa kuvasta pyritään poistamaan häiriötä kuvasta. Meteli voi olla joko sattumanvaraista epäjohdonmukaista häiriötä tai se voi olla kuvauslaitteesta tai muokkausalgoritmeista johtuvaa aiheuttamaa johdonmukaista häiriötä. Eräs tyypillinen meteli mitä kuvista löytyy on niin kutsuttu "Suola ja pippuri"- meteli. 
-\begin{figure}[h]
-	\caption{Suola ja pippuri- melua.}
-	\includegraphics[height = 10cm]{Noise_salt_and_pepper}
-	\centering	
-\end{figure}
+TODO Survey over image thresholding techniques and quantitative performance evaluation
 
-Tällä tarkoitetaan häiriöitä, jotka ilmenevät täysin ympäristöstään riippumattomina valkoisina tai mustina pikseleinä. Tyypillisesti tällaista häiriötä on vain pienessä määrässä kuvan pikseleitä. 
-Toinen useasti esiintyvä häiriön tyyppi on Gaussian-meteli. Gaussian-metelissä kaikki kuvan pikselit ovat siirtyneet tyypillisesti erittäin vähän.
+Metelin poistaminen on esiprosessoinnin vaihe, jossa kuvasta pyritään poistamaan häiriötä kuvasta. Meteli voi olla joko sattumanvaraista epäjohdonmukaista häiriötä tai se voi olla kuvauslaitteesta tai muokkausalgoritmeista johtuvaa aiheuttamaa johdonmukaista häiriötä. Metelin poisto
 
-Molempien esimerkkinä käyttämieni melujen hoitamisessa pitää punnita hyötyjä ja haittoja. Ensimmäinen olennainen tekijä ongelmien hoidossa on käytettävissä oleva prosessointiteho. Digitaalikameralla on käytössä huomattavan pieni prosessori verrattuna esimerkiksi tietokoneella tehtyyn kuva-analyysiin. On pohdittava tapauskohtaisesti, milloin mikäkin korjaustoimenpide on kannattava ja milloin ei.
-Toinen olennainen tekijä on päättäminen siitä, voidaanko kuvan yksityskohtien tarkkuutta uhrata, jotta saadaan suurempi määrä melua pois.
+Eräs esiprosessoinnin toimi on tekstin jakaminen alueisiin. Tällä tarkoitetaan eksplisiittistä tekstin jakamista esimerkiksi kappaleisiin tai lainauksiin. Tämän avulla erilaisia osia tekstistä voidaan analysoida tehokkaammin, sillä alueilla saatetaan tietää olevan tietynlaisia ominaisuuksia, jotka vaikeuttaisivat muuten merkkien tai sanojen tunnistusta alueen sisällä.
 
-Eräs toinen esiprosessoinnin toimi on tekstin jakaminen alueisiin. Tällä tarkoitetaan eksplisiittistä tekstin jakamista esimerkiksi kappaleisiin tai lainauksiin. Tämän avulla erilaisia osia tekstistä voidaan analysoida tehokkaammin, sillä alueilla saatetaan tietää olevan tietynlaisia ominaisuuksia, jotka vaikeuttaisivat muuten merkkien tai sanojen tunnistusta alueen sisällä.
-Alueisiin jaon ensimmäinen osa on melun prosessointi pois kuvasta\cite{ogorman}. Tässä vaiheessa tulee olla tarkkana, sillä pilkut ja pisteet saatetaan tulkita meteliksi. Tämän estämiseksi vaihe on tehtävä varoen. Seuraava vaihe on kuvan muuttaminen binäärimuotoon. Tämä tarkoittaa siis sitä, että jokainen pikseli on joko täysin valkoinen tai täysin musta. Seuraavaksi kuvasta etsitään toisiinsa kiinnityneet mustat pikselit. Nämä ovat kuvan "symbolit". Jokaiselle symbolille lasketaan pinta-ala ja keskipiste. Seuraavaksi etsitään symbolin n lähintä naapurisymbolia. O'gorman\cite{ogorman} ehdottaa, että n olisi vähintään neljä, sillä tyypillisesti neljänneksi kauimpana oleva symboli on eri rivillä tutkittavasti symbolista.  Lopuksi vierekkäisten symboliparien keskipisteiden etäisyyttä, jonka perusteella voidaan päätellä dokumentien vinous. Mikäli dokumentti huomataan vinoksi, korjataan sen kulmaa ja palataan symbolien luontivaiheeseen. Mikäli dokumentti vastaavasti oli hyväksyttävän suorassa, voidaan päätellä mitkä symbolit ovat kiinnittyneitä toisiinsa samoissa linjoissa ja mitkä pystysuunnassa. Näin dokumentista voidaan havaita rivit, kappaleet, otsikot yms.
+
 \subsubsection{Hahmotunnistus}
 
 Seuraava vaihe vaihtelee riippuen merkintunnistusjärjestelmän implementaatiosta. Kun tarkastellaan dokumentteja, joissa kirjaisin on etukäteen tiedossa, voidaan yksinkertaisesti verrata jokaista merkkiä etukäteen tiedossa oleviin saman kirjaisimen merkkeihin. Tämä toimii siten, että verrataan tarkasteltavan merkin pikselien sijainteja jo tiedossa olevien merkkien pikseleiden sijainteihin. Kun saadaan osuma yhteensopivuudesta, tiedetään merkin olevan sama. Tämä vaihe ei kuitenkaan ole aina oikea tapa edetä. Esimerkiksi tilanteessa, jossa ei etukäteen tiedetä kirjaisinta, jota dokumentissa käytetään, saattaa tunnistusvaiheessa tulla ongelmia, sillä kirjaimet saattavat poiketa huomattavasti toisistaan eri kirjaisimissa. 
-
 
 
 \subsubsection{Ominaisuuksien tunnistaminen}
@@ -100,94 +95,72 @@ Seuraava vaihe vaihtelee riippuen merkintunnistusjärjestelmän implementaatiosta.
 Tällaiseen tilanteeseen eräs kehitetty ratkaisu on ominaisuuksien tunnistaminen. Kun tunnistetaan merkin ominaisuuksia koko merkin sijaan ei merkin kirjaisimella ole välttämättä merkitystä. Esimkeriksi ison a-kirjaimen ominaisuuksina on käytännössä poikkeuksetta kaksi pystysuuntaista viivaa, jotka alkavat omista alakulmistaan ja kohtaavat keskellä sekä horisontaalinen viiva noin keskellä merkkiä joka yhdistää pystysuuntaiset viivat. Nyt kun etsimme tekstistä merkkejä, jotka täyttävät nämä ominaisuudet voimme suurella todennäköisyydellä löytää isot a-kirjaimet.
 \begin{figure}[h]
 	\caption{Yksinkertaistettu esimerkki ison a-kirjaimen ominaisuuksista.}
-	\cite{ocrsite}
+	TODO http://www.explainthatstuff.com/how-ocr-works.html
 	\includegraphics{ocr-feature-detection}
 	\centering	
 \end{figure}
 
-
-\subsubsection{Luokittelu}
-
 Ominaisuuksien tunnistaminen hajottaa merkit pienemmiksi osiksi, kuten esimerkiksi viivoiksi, viivojen suunniksitai niiden kohtauspisteiksi. Merkkien jakaminen tällaisiin pienempiin osiin parantaa laskentatehoa sillä se pienentää merkkien dimensioita, joita tulee verrata. Näitä ominaisuuksia verrataan jo olemassa olevaan vektorirepresentaatioon merkistä, joka sisältää merkin yksinkertaistetut ominaisuudet.
 
 
+\subsubsection{Classification}
+TODO
 
-%\subsection{Sanantunnistus}
+\subsection{Sanantunnistus}
 
-%TODO
+TODO
 
-%\subsubsection{Sanantunnistus 1}
+\subsubsection{Sanantunnistus 1}
 
-%TODO
+TODO
 
-%\subsubsection{Sanantunnistus 2}
+\subsubsection{Sanantunnistus 2}
 
 
-%TODO
+TODO
 
  
 
 
-%\section{Älykäs merkin- ja sanantunnistus}
+\section{Älykäs merkin- ja sanantunnistus}
 
-%TODO
+TODO
 
-%\subsection{Älykäs merkintunnistus}
+\subsection{Älykäs merkintunnistus}
 
-%TODO
+TODO
 
-%\subsection{Älykäs sanantunnistus}
+\subsection{Älykäs sanantunnistus}
 
-%TODO
-
-
-%\section{Koneoppimisen sovelluksia merkintunnistuksessa}
+TODO
 
 
-%TODO
+\section{Koneoppimisen sovelluksia merkintunnistuksessa}
 
-%\subsection{Sovellus 1}
 
-%TODO
+TODO
 
-%\subsection{Sovellus 2}
+\subsection{Sovellus 1}
 
-%TODO
+TODO
 
-%\subsection{Sovellus 3}
+\subsection{Sovellus 2}
 
-%TODO
-%TODO FIX TO BIBTEX
-\newpage
-\begin{thebibliography}{9}
-\bibitem{smori} 
-S. Mori, C. Y. Suen and K. Yamamoto. 
-\textit{"Historical review of OCR research and development,"} 
-in Proceedings of the IEEE, vol. 80, no. 7, pp. 1029-1058, Jul 1992.
+TODO
 
-\bibitem{surveyov} 
-M. Sezgin and B. Sankur. 
-\textit{Survey over image thresholding techniques and quantitative performance evaluation}.
-Journal of Electronic Imaging 13(1), 146?165 (January 2004)
- 
-\bibitem{ocrsite} 
-Optical character recognition (OCR)
-\\\texttt{http://www.explainthatstuff.com/how-ocr-works.html}
+\subsection{Sovellus 3}
 
-\bibitem{ogorman}
-L. O'Gorman, 
-\textit{"The document spectrum for page layout analysis,"} 
-in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 15, no. 11, pp. 1162-1173, Nov 1993.
-\end{thebibliography}
-%\bibliographystyle{tktl}
-%\bibliography{lahteet}
+TODO
+
+
+\bibliography{lahteet}
 
 % vaihtoehtona vielä vanha mnemoninen tyyli (muistikkaat)
 % Muistikastyylissä lähteen tunnisteena käytetään lyhennettä. joka
 % koostuu kolmesta kirjaimesta ja kahdestas numerosta. Kirjaimet ovat tekijän
 % tai tekijöiden sukunimien alkukirjaimia ja numerot vuosiluvun kaksi
 % viimeistä numeroa.
-
+% \bibliographystyle{tktl}
 %\bibliography{lahteet-muistikkailla}
 
 \lastpage

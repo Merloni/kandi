@@ -1,0 +1,20 @@
+\babel@toc {finnish}{}
+\contentsline {section}{\numberline {1}Johdanto}{1}
+\contentsline {section}{\numberline {2}Merkintunnistus yleisesti}{1}
+\contentsline {subsection}{\numberline {2.1}Merkintunnistuksen historiaa}{1}
+\contentsline {subsection}{\numberline {2.2}Merkintunnistuksen p\"a\"apiirteet}{2}
+\contentsline {subsubsection}{\numberline {2.2.1}Tiedoston siirt\"aminen koneelle}{2}
+\contentsline {subsubsection}{\numberline {2.2.2}Tiedoston esiprosessointi}{2}
+\contentsline {subsubsection}{\numberline {2.2.3}Hahmotunnistus}{3}
+\contentsline {subsubsection}{\numberline {2.2.4}Ominaisuuksien tunnistaminen}{3}
+\contentsline {subsubsection}{\numberline {2.2.5}Classification}{4}
+\contentsline {subsection}{\numberline {2.3}Sanantunnistus}{4}
+\contentsline {subsubsection}{\numberline {2.3.1}Sanantunnistus 1}{4}
+\contentsline {subsubsection}{\numberline {2.3.2}Sanantunnistus 2}{4}
+\contentsline {section}{\numberline {3}\"Alyk\"as merkin- ja sanantunnistus}{4}
+\contentsline {subsection}{\numberline {3.1}\"Alyk\"as merkintunnistus}{4}
+\contentsline {subsection}{\numberline {3.2}\"Alyk\"as sanantunnistus}{4}
+\contentsline {section}{\numberline {4}Koneoppimisen sovelluksia merkintunnistuksessa}{4}
+\contentsline {subsection}{\numberline {4.1}Sovellus 1}{5}
+\contentsline {subsection}{\numberline {4.2}Sovellus 2}{5}
+\contentsline {subsection}{\numberline {4.3}Sovellus 3}{5}
