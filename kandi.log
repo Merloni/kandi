@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.3.4)  23 APR 2018 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.9.5)  5 MAY 2018 11:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./kandi.tex
+**kandi.tex
 (./kandi.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 16 language(s) loaded.
 (./tktltiki.cls
 Document Class: tktltiki 2007/09/12 v1.1 Dokumenttiluokka TiKi-kurssia varten
-(c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(c:/texlive/2017/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,132 +25,223 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(c:/texlive/2017/texmf-dist/tex/latex/base/latexsym.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(c:/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/latin9.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin9.def
 File: latin9.def 2015/03/17 v1.2c Input encoding file
 ))
-(c:/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/02/14 3.18 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/02/24 3.9q The Babel package
 
-(c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/02/14 3.18 Babel switching mechanism
-)
-(c:/texlive/2017/texmf-dist/tex/generic/babel-finnish/finnish.ldf
-Language: finnish 2007/10/20 v1.3q Finnish support from the babel system
 
-(c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count87
-\U@D=\dimen103
+! Package babel Error: Unknown option `finnish'. Either you misspelled it
+(babel)                or the language definition file finnish.ldf was not foun
+d.
 
-(c:/texlive/2017/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count88
-)
-Package babel Info: Making " an active character on input line 89.
-))
-(c:/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 \ProcessOptions*
+                      
+? 
+! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.310 \ProcessOptions*
+                      
+? ^^A
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? 
+
+! Package babel Error: You haven't specified a language option.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.343 ...ry to proceed from here, type x to quit.}
+                                                  
+? 
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 )
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(c:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count89
-\Gm@cntv=\count90
-\c@Gm@tempcnt=\count91
-\Gm@bindingoffset=\dimen104
-\Gm@wd@mp=\dimen105
-\Gm@odd@mp=\dimen106
-\Gm@even@mp=\dimen107
-\Gm@layoutwidth=\dimen108
-\Gm@layoutheight=\dimen109
-\Gm@layouthoffset=\dimen110
-\Gm@layoutvoffset=\dimen111
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks17
 )
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (426.79134pt) is ignored.
 
-\c@appendix=\count92
-\c@appendixpage=\count93
-(c:/texlive/2017/texmf-dist/tex/latex/base/openbib.sty)
+\c@appendix=\count90
+\c@appendixpage=\count91
+(/usr/share/texlive/texmf-dist/tex/latex/base/openbib.sty)
+! Undefined control sequence.
+<recently read> \addto 
+                       
+l.213 \addto
+            \captionsfinnish{\def\refname{Lähteet}}
+? 
+! Undefined control sequence.
+l.213 \addto\captionsfinnish
+                            {\def\refname{Lähteet}}
+? 
+! Undefined control sequence.
+l.214 \addto
+            \captionsenglish{\def\enclname{Appendices}}
+? 
+! Undefined control sequence.
+l.214 \addto\captionsenglish
+                            {\def\enclname{Appendices}}
+? 
+! Undefined control sequence.
+l.215 \addto
+            \captionsswedish{\def\enclname{Bilagor}}
+? 
+! Undefined control sequence.
+l.215 \addto\captionsswedish
+                            {\def\enclname{Bilagor}}
+? 
+! Undefined control sequence.
+l.239 \addto
+            \captionsfinnish{%
+? 
+! Undefined control sequence.
+l.239 \addto\captionsfinnish
+                            {%
+? 
+! Undefined control sequence.
+l.247 \addto
+            \captionsenglish{%
+? 
+! Undefined control sequence.
+l.247 \addto\captionsenglish
+                            {%
+? 
+! Undefined control sequence.
+l.255 \addto
+            \captionsswedish{%
+? 
+! Undefined control sequence.
+l.255 \addto\captionsswedish
+                            {%
+? 
+! Undefined control sequence.
+l.318 \addto
+            \captionsfinnish{%
+? 
+! Undefined control sequence.
+l.318 \addto\captionsfinnish
+                            {%
+? 
+! Undefined control sequence.
+l.323 \addto
+            \captionsenglish{%
+? 
+! Undefined control sequence.
+l.323 \addto\captionsenglish
+                            {%
+? 
+! Undefined control sequence.
+l.328 \addto
+            \captionsswedish{%
+? 
+! Undefined control sequence.
+l.328 \addto\captionsswedish
+                            {%
+? 
 \@abstract=\box26
-)
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/epsfig.sty
-Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: dvips.def on input line 95.
 
-(c:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 ))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
 )
-\epsfxsize=\dimen114
-\epsfysize=\dimen115
+\epsfxsize=\dimen113
+\epsfysize=\dimen114
 )
-(c:/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip43
 \subfigcapskip=\skip44
-\subfigcaptopadj=\dimen116
+\subfigcaptopadj=\dimen115
 \subfigbottomskip=\skip45
-\subfigcapmargin=\dimen117
+\subfigcapmargin=\dimen116
 \subfiglabelskip=\skip46
-\c@subfigure=\count94
-\c@lofdepth=\count95
-\c@subtable=\count96
-\c@lotdepth=\count97
+\c@subfigure=\count92
+\c@lofdepth=\count93
+\c@subtable=\count94
+\c@lotdepth=\count95
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(c:/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip47
 \subfig@bottom=\skip48
 )
-(c:/texlive/2017/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./kandi.aux)
@@ -170,9 +261,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: dvips
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -203,73 +294,49 @@ LaTeX Font Info:    ... okay on input line 9.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
-\scratchdimen=\dimen118
-\scratchbox=\box27
-\nofMPsegments=\count99
-\nofMParguments=\count100
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count101
-\MPscratchDim=\dimen119
-\MPnumerator=\count102
-\makeMPintoPDFobject=\count103
-\everyMPtoPDFconversion=\toks19
-) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+! Undefined control sequence.
+\maketitle ...e \hspace *{85mm} \dateofacceptance 
+                                                  \hspace {10mm} \grade \^^M...
+l.19 \maketitle
+               
+? 
+! Undefined control sequence.
+\maketitle ...eofacceptance \hspace {10mm} \grade 
+                                                  \^^M\fi \par \vspace {10mm...
+l.19 \maketitle
+               
+? 
+! Undefined control sequence.
+\maketitle ...} \else \hspace *{85mm} \instructor 
+                                                  \fi \par \vspace *{70mm} \...
+l.19 \maketitle
+               
+? 
+! Undefined control sequence.
+\maketitle ...\@author \par \vfill \par \helsinki 
+                                                  \ \@date \par \@level \par...
+l.19 \maketitle
+               
+? 
+! Undefined control sequence.
+\maketitle ...inki \ \@date \par \@level \par \uh 
+                                                  \\ \@department \par \end ...
+l.19 \maketitle
+               
+? 
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+! LaTeX Error: There's no line here to end.
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \maketitle
+               
+? 
+[1
 
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(c:/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(c:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-)) [1
-
-{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -277,8 +344,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 28.
 LaTeX Font Info:    Try loading font information for U+lasy on input line 28.
-
-(c:/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 Overfull \hbox (153.20865pt too wide) in paragraph at lines 31--31
@@ -293,57 +359,88 @@ Overfull \vbox (190.58662pt too high) has occurred while \output is active []
 \tf@toc=\write3
 \openout3 = `kandi.toc'.
 
- [2] [1]
-<images/Noise_salt_and_pepper.png, id=21, 321.2pt x 429.605pt>
-File: images/Noise_salt_and_pepper.png Graphic file (type png)
-<use images/Noise_salt_and_pepper.png>
-Package pdftex.def Info: images/Noise_salt_and_pepper.png  used on input line 7
-9.
-(pdftex.def)             Requested size: 212.73273pt x 284.52756pt.
- [2] [3 <./images/Noise_salt_and_pepper.png (PNG copy)>]
-<images/ocr-feature-detection.png, id=28, 301.125pt x 80.3pt>
-File: images/ocr-feature-detection.png Graphic file (type png)
-<use images/ocr-feature-detection.png>
-Package pdftex.def Info: images/ocr-feature-detection.png  used on input line 1
-03.
-(pdftex.def)             Requested size: 301.12425pt x 80.29979pt.
- [4 <./images/ocr-feature-detection.png>] [5] [6] [7]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 183.
+ [2]
+Overfull \hbox (7.91331pt too wide) in paragraph at lines 45--46
+[]\T1/cmr/m/n/12 Vaihtoehtoisia ratkaisuja per-in-teisem-mille merk-in-tun-nis-
+tus-ratkaisulle on vi-ime aikoina
+ []
 
 
-(c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+Overfull \hbox (14.7263pt too wide) in paragraph at lines 45--46
+\T1/cmr/m/n/12 pyritty et-simään ko-neop-pimisen kautta. Täl-lai-sissa ratkaisu
+-issa on tyyp-il-lis-esti käytössä
+ []
+
+
+Overfull \hbox (38.51291pt too wide) in paragraph at lines 57--59
+\T1/cmr/m/n/12 utta ja sitä kautta lu-otet-tavu-utta sekä MICR- että myöhem-min
+ myös OCR-teknologioissa.[[]] 
+ []
+
+[1]
+
+! LaTeX Error: File `Noise_salt_and_pepper' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...hics[height = 10cm]{Noise_salt_and_pepper}
+                                                  
+? 
+[2] [3]
+
+! LaTeX Error: File `ocr-feature-detection' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 	\includegraphics{ocr-feature-detection}
+                                              
+? 
+
+Overfull \hbox (4.06708pt too wide) in paragraph at lines 110--111
+\T1/cmr/m/n/12 Ominaisuuksien tun-nistami-nen ha-jot-taa merkit pienem-miksi os
+iksi, kuten es-imerkiksi
+ []
+
+[4]
+Overfull \hbox (5.50299pt too wide) in paragraph at lines 136--137
+\T1/cmr/m/n/12 lään paino, jonka pe-rus-teella neu-roverkko tekee ole-tuk-sia d
+atasta joka sille on syötetty. 
+ []
+
+[5] [6]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 182.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (269.91489pt too wide) in paragraph at lines 191--193
+Overfull \hbox (269.91489pt too wide) in paragraph at lines 190--192
 \T1/cmtt/m/n/12 http://www.cvisiontech.com/resources/ocr-primer/ocr-neural-netw
 orks-and-other-machine-learning-techniques.html 
  []
 
-[8] (./kandi.aux)
+[7]
+! Undefined control sequence.
+<argument> ...t \contentsline {section}{\enclname 
+                                                  }{}}
+l.208 \appendices
+                 
+? 
+(./kandi.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3125 strings out of 492982
- 43227 string characters out of 6136226
- 116663 words of memory out of 5000000
- 6617 multiletter control sequences out of 15000+600000
+ 1810 strings out of 494434
+ 23586 string characters out of 6170364
+ 82025 words of memory out of 5000000
+ 5212 multiletter control sequences out of 15000+600000
  14669 words of font info for 37 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 41i,7n,25p,1223b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-ive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2017/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2017/texmf-dist/
-fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2017/texmf-dist/fonts/type
-1/public/cm-super/sfrm0600.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/c
-m-super/sfrm1000.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sf
-rm1200.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
-><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on kandi.pdf (11 pages, 277568 bytes).
-PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 hyphenation exceptions out of 8191
+ 32i,7n,24p,1210b,174s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on kandi.dvi (10 pages, 28244 bytes).
