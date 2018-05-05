@@ -40,7 +40,7 @@
 Merkintunnistusta käytetään muuttamaan skannattujen ja usein tieto- tai kirjoituskoneella kirjoitettujen dokumenttien sisältö tietokoneen luettavaan merkistöön. Tämä mahdollistaa tekstin muokkaamisen, lukemisen ja säilömisen huomattavasti aiempaa tehokkaammalla tavalla. Tällaiselle toiminnalle on huomattavasti kysyntää niin kaupallisessa kuin epäkaupallisessakin toiminnassa. Staattisten ennalta määritetyssä muodossa olevien dokumenttien tunnistaminen on tutkimusalueena varsin pitkällä.
 
 Hyvin suuri osa arkipäiväisesti informaatiosta ei kuitenkaan ilmene dokumenteissa vaan esimerkiksi liikkeiden julkisivuissa, tiekylteissä tai yleisesti ottaen tilanteissa, joita ei voida esittää ennalta määritetyssä muodossa.
-Useat tavallisimmat optiset merkintunnistusratkaisut eivät toimi tällaisissa luonnollisissa ympäristöissä hyvin, sillä nämä ratkaisut vaativat tyypillisesti toimiakseen mielellään ennalta määritellyn, mutta ainakin hyvin selkeän, tasaisen ja mahdollisimman meluttoman ympäristön.
+Useat tavallisimmat optiset merkintunnistusratkaisut eivät toimi tällaisissa luonnollisissa ympäristöissä hyvin, sillä nämä ratkaisut vaativat tyypillisesti toimiakseen mielellään ennalta määritellyn, mutta ainakin hyvin selkeän, tasaisen ja mahdollisimman häiriöttömän ympäristön.
 
 Vaihtoehtoisia ratkaisuja perinteisemmille merkintunnistusratkaisulle on viime aikoina pyritty etsimään koneoppimisen kautta. Tällaisissa ratkaisuissa on tyypillisesti käytössä neuroverkkoja, jotka automaattisesti päivittävät tietokantaansa uusilla lisäyksillä dataa ja käyttää tätä arvioimaan merkkien arvoja.
 
@@ -71,23 +71,23 @@ Ensimmäisen vaiheen jälkeen koneella on nyt käytössään digitaalisessa muodossa o
 
 \subsubsection{Tiedoston esiprosessointi}
 
-Nykyisissä merkintunnistusjärjestelmissä on usein erilaisia esiprosessointivaiheita, joiden tarkoituksena on parantaa merkintunnistuksen tarkkuutta. Tällaisia prosesseja ovat esimerkiksi skannatun dokumentin suoruuden korjaaminen, kuvassa esiintyvän metelin poistaminen tai kuvasuuhteen ja skaalan normalisointi. Myös eräs tyypillinen vaihe merkintunnistuksessa on kuvan siirtäminen harmaaväriskaala- tai värikuvasta mustavalkoiseksi, jolloin valkoinen tausta voidaan erottaa mustasta tekstistä. Tällöin ohjelmiston tarvitsee analysoida pelkästään mustaa osaa ja prosessi helpottuu. Kuvan muuttaminen binäärikuvaksi, jossa on siis vain kaksi väriä, onkin usealle merkintunnistusjärjestelmälle välttämätön vaihe, sillä suuri osa kaupallisista merkintunnistusjärjestelmistä toimii vain binäärikuvilla. \cite{surveyov}
+Nykyisissä merkintunnistusjärjestelmissä on usein erilaisia esiprosessointivaiheita, joiden tarkoituksena on parantaa merkintunnistuksen tarkkuutta. Tällaisia prosesseja ovat esimerkiksi skannatun dokumentin suoruuden korjaaminen, kuvassa esiintyvän häiriön poistaminen tai kuvasuuhteen ja skaalan normalisointi. Myös eräs tyypillinen vaihe merkintunnistuksessa on kuvan siirtäminen harmaaväriskaala- tai värikuvasta mustavalkoiseksi, jolloin valkoinen tausta voidaan erottaa mustasta tekstistä. Tällöin ohjelmiston tarvitsee analysoida pelkästään mustaa osaa ja prosessi helpottuu. Kuvan muuttaminen binäärikuvaksi, jossa on siis vain kaksi väriä, onkin usealle merkintunnistusjärjestelmälle välttämätön vaihe, sillä suuri osa kaupallisista merkintunnistusjärjestelmistä toimii vain binäärikuvilla. \cite{surveyov}
 
-Metelin poistaminen on esiprosessoinnin vaihe, jossa kuvasta pyritään poistamaan häiriötä kuvasta. Meteli voi olla joko sattumanvaraista epäjohdonmukaista häiriötä tai se voi olla kuvauslaitteesta tai muokkausalgoritmeista johtuvaa aiheuttamaa johdonmukaista häiriötä. Eräs tyypillinen meteli mitä kuvista löytyy on niin kutsuttu suola ja pippuri- melu. 
+Häiriöiden poistaminen on esiprosessoinnin vaihe, jossa kuvasta pyritään poistamaan häiriötä kuvasta. Häiriö voi olla joko sattumanvaraista epäjohdonmukaista häiriötä tai se voi olla kuvauslaitteesta tai muokkausalgoritmeista johtuvaa aiheuttamaa johdonmukaista häiriötä. Eräs tyypillinen häiriö mitä kuvista löytyy on niin kutsuttu suola ja pippuri- häiriö. 
 \begin{figure}[h]
-	\caption{Esimerkki suola ja pippuri-melusta.}
+	\caption{Esimerkki suola ja pippuri-häiriöstä.}
 	\includegraphics[height = 10cm]{Noise_salt_and_pepper}
 	\centering	
 \end{figure}
 
 Tällä tarkoitetaan häiriöitä, jotka ilmenevät täysin ympäristöstään riippumattomina valkoisina tai mustina pikseleinä. Tyypillisesti tällaista häiriötä on vain pienessä määrässä kuvan pikseleitä. 
-Toinen useasti esiintyvä häiriön tyyppi on Gaussian-meteli. Gaussian-metelissä kaikki kuvan pikselit ovat muuttuneet oikeasta väristään. Yleensä Gaussian-melussa muutos on huomattavan pientä.
+Toinen useasti esiintyvä häiriön tyyppi on Gaussian-häiriö. Gaussian-häiriössä kaikki kuvan pikselit ovat muuttuneet oikeasta väristään. Yleensä Gaussian-häiriössä muutos on huomattavan pientä.
 
-Molempien esimerkkinä käyttämieni melujen hoitamisessa pitää punnita hyötyjä ja haittoja. Ensimmäinen olennainen tekijä ongelmien hoidossa on käytettävissä oleva prosessointiteho. Digitaalikameralla on käytössä huomattavan pieni prosessori verrattuna esimerkiksi tietokoneella tehtyyn kuva-analyysiin. On pohdittava tapauskohtaisesti, milloin mikäkin korjaustoimenpide on kannattava ja milloin ei.
-Toinen olennainen tekijä on päättäminen siitä, voidaanko kuvan yksityskohtien tarkkuutta uhrata, jotta saadaan suurempi määrä melua pois.
+Molempien esimerkkinä käyttämieni häiriöiden hoitamisessa pitää punnita hyötyjä ja haittoja. Ensimmäinen olennainen tekijä ongelmien hoidossa on käytettävissä oleva prosessointiteho. Digitaalikameralla on käytössä huomattavan pieni prosessori verrattuna esimerkiksi tietokoneella tehtyyn kuva-analyysiin. On pohdittava tapauskohtaisesti, milloin mikäkin korjaustoimenpide on kannattava ja milloin ei.
+Toinen olennainen tekijä on päättäminen siitä, voidaanko kuvan yksityskohtien tarkkuutta uhrata, jotta saadaan suurempi määrä häiriötä kuvasta pois.
 
 Eräs toinen esiprosessoinnin toimi on tekstin jakaminen alueisiin. Tällä tarkoitetaan eksplisiittistä tekstin jakamista esimerkiksi kappaleisiin tai lainauksiin. Tämän avulla erilaisia osia tekstistä voidaan analysoida tehokkaammin, sillä alueilla saatetaan tietää olevan tietynlaisia ominaisuuksia, jotka vaikeuttaisivat muuten merkkien tai sanojen tunnistusta alueen sisällä.
-Alueisiin jaon ensimmäinen osa on melun prosessointi pois kuvasta\cite{ogorman}. Tässä vaiheessa tulee olla tarkkana, sillä pilkut ja pisteet saatetaan tulkita meteliksi. Tämän estämiseksi vaihe on tehtävä varoen. Seuraava vaihe on kuvan muuttaminen binäärimuotoon. Tämä tarkoittaa siis sitä, että jokainen pikseli on joko täysin valkoinen tai täysin musta. Seuraavaksi kuvasta etsitään toisiinsa kiinnityneet mustat pikselit. Nämä ovat kuvan "symbolit". Jokaiselle symbolille lasketaan pinta-ala ja keskipiste. Seuraavaksi etsitään symbolin n lähintä naapurisymbolia. O'Gorman\cite{ogorman} ehdottaa, että n olisi vähintään neljä, sillä tyypillisesti neljänneksi kauimpana oleva symboli on eri rivillä tutkittavasta symbolista.  Lopuksi tutkitaan vierekkäisten symboliparien keskipisteiden etäisyyttä, jonka perusteella voidaan päätellä dokumentin vinous. Mikäli dokumentti huomataan vinoksi, korjataan sen kulmaa ja palataan symbolien luontivaiheeseen. Mikäli dokumentti vastaavasti oli hyväksyttävän suorassa, voidaan päätellä mitkä symbolit ovat kiinnittyneitä toisiinsa samoissa linjoissa ja mitkä pystysuunnassa. Näin dokumentista voidaan havaita rivit, kappaleet tai otsikot.
+Alueisiin jaon ensimmäinen osa on häiriöiden prosessointi pois kuvasta\cite{ogorman}. Tässä vaiheessa tulee olla tarkkana, sillä pilkut ja pisteet saatetaan tulkita häiriöiksi. Tämän estämiseksi vaihe on tehtävä varoen. Seuraava vaihe on kuvan muuttaminen binäärimuotoon. Tämä tarkoittaa siis sitä, että jokainen pikseli on joko täysin valkoinen tai täysin musta. Seuraavaksi kuvasta etsitään toisiinsa kiinnityneet mustat pikselit. Nämä ovat kuvan "symbolit". Jokaiselle symbolille lasketaan pinta-ala ja keskipiste. Seuraavaksi etsitään symbolin n lähintä naapurisymbolia. O'Gorman\cite{ogorman} ehdottaa, että n olisi vähintään neljä, sillä tyypillisesti neljänneksi kauimpana oleva symboli on eri rivillä tutkittavasta symbolista.  Lopuksi tutkitaan vierekkäisten symboliparien keskipisteiden etäisyyttä, jonka perusteella voidaan päätellä dokumentin vinous. Mikäli dokumentti huomataan vinoksi, korjataan sen kulmaa ja palataan symbolien luontivaiheeseen. Mikäli dokumentti vastaavasti oli hyväksyttävän suorassa, voidaan päätellä mitkä symbolit ovat kiinnittyneitä toisiinsa samoissa linjoissa ja mitkä pystysuunnassa. Näin dokumentista voidaan havaita rivit, kappaleet tai otsikot.
 \subsubsection{Hahmotunnistus}
 
 Seuraava vaihe vaihtelee riippuen merkintunnistusjärjestelmän implementaatiosta. Kun tarkastellaan dokumentteja, joissa kirjaisin on etukäteen tiedossa, voidaan yksinkertaisesti verrata jokaista merkkiä etukäteen tiedossa oleviin saman kirjaisimen merkkeihin. Tämä toimii siten, että verrataan tarkasteltavan merkin pikselien sijainteja jo tiedossa olevien merkkien pikseleiden sijainteihin. Kun saadaan osuma yhteensopivuudesta, tiedetään merkin olevan sama. Tämä vaihe ei kuitenkaan ole aina oikea tapa edetä. Esimerkiksi tilanteessa, jossa ei etukäteen tiedetä kirjaisinta, jota dokumentissa käytetään, saattaa tunnistusvaiheessa tulla ongelmia, sillä kirjaimet saattavat poiketa huomattavasti toisistaan eri kirjaisimissa. 
@@ -113,7 +113,7 @@ Ominaisuuksien tunnistaminen hajottaa merkit pienemmiksi osiksi, kuten esimerkik
 
 \subsection{Sanantunnistus}
 
-TODO
+Usein erillisenä osana tunnistusohjelmistoissa on sanantunnistus. Sanantunnistuksen tarkoituksena on vahvistaa tiettyjen kirjainten ja kirjainyhdistelmien todennäköisyyttä sen perusteella, muodostuuko kirjaimista sana. Eräs menetelmä on myös tutkia sanojen kontekstia ja sitä kautta todentaa sanojen, ja merkkien, todennäköisyys. 
 
 \subsubsection{Sanantunnistus 1}
 
@@ -127,37 +127,54 @@ TODO
 \section{Älykäs merkin- ja sanantunnistus}
 
 Tyypillisesti tietojenkäsittelytieteessä älykkäillä metodeilla tarkoitetaan ohjelmia, jotka kykenevät kehittämään itseään. Tyypillisesti koneoppimisessa tämä tapahtuu opetusdatan kautta, joka sisältää sekä esimerkin koneelle syötettävästä datasta, että vastauksen siihen mitä tämä esimerkki kuvastaa. Merkintunnistuksessa opetusvaihetta voidaan miettiä siten, että ensiksi syötetään ohjelmalle kuva yhdestä merkistä ja kerrotaan mikä tämän merkin arvo on. 
+Esimerkkinä voidaan käyttää esimerkiksi kuvaa isosta A-kirjaimesta. Syötteenä on tällöin kuva ja vastauksena suuri A-kirjain. 
+
+Viime vuosina suureen suosioon erilaisissa älykkäissä menetelmissä tietojenkäsittelytieteessä ovat nousseet neuroverkot. Neuroverkot ovat hyviä vaihtoehtoja ongelmille, joille ei ole yksiselitteistä algoritmistä ratkaisutapaa tai joiden algoritmisen ratkaisun löytäminen olisi liiallisen työlästä\cite{cvision}.  Neuroverkot ovat erityisen hyviä saamaan yleistettäviä vastauksia sekavasta ja monimutkaisesta datasta.  Erityisesti kuvat, jotka sisältävät huomattavan määrän häiriötä ja virheitä, ovat täten hyvä ongelma neuroverkon ratkaistavaksi. 
+
+\subsection{Neuroverkot}
+
+Neuroverkot toimivat jäljittelemällä ihmisen aivojen toimintaa. Neuroverkot koostuvat keinotekoisista neuroneista, jotka taas vastaavasti koostuvat synapseista, summaajasta sekä aktivaatiofunktiosta. Neuroneiden välillä oleville synapseille määritellään paino, jonka perusteella neuroverkko tekee oletuksia datasta joka sille on syötetty.
+
+\subsubsection{Neuroverkot fonttien opettelussa bittikartoilla}
+
+Isot kirjaimet, 26 kirjainta. TODO
+
+16*16 pikseliä, 256 bittiä = 256koko vectori, kun värillinenbitti = 1, jos ei bitti = 0.
+
+Tyypillisesti käytetään mielummin 1 = 0.5, 0 = -0.5
+
+Tulos = 26(1 jokaiselle kirjaimelle) vectori, jossa -0.5 jos ei oikea tulos ja 0.5 jos oikea.
+
+Seuraavaksi harjoitetaan verkkoa.
+For the above task we can use one layer of neural network, which will have 256 inputs corresponding to the size of input vector and 26 neurons in the layer corresponding to the size of the output vector. 
+
+At each learning epoch(KIERROS?), all samples from the training set are presented to the network and the summary squared error is calculated. 
+
+When the error becomes less than the specified error limit, then the training is done and the network can be used for recognition.
 
 
+\subsubsection{Neuroverkot ominaisuuksien tunnistamisessa}
+
+Yllä oleva toimii, mutta se on rajoittunut erityisesti ongelmatilanteiden ja poikkeuksien suhteen, joita tekstintunnistuksessa usein tapahtuu. Esim fontit, tekstin skaala, häiriöt ymsyms.
 
 
-\section{Koneoppimisen sovelluksia merkintunnistuksessa}
+When there are considerable bitmap variations in the definition of each font character, a better set of inputs to represent the data would be a set of classifiers, computable from the bitmap images, such that these classifiers are invariant to changes in font and point size.
 
+Such classifiers might include topological characteristics, such as Euler number, compactness, and geometric properties, e.g., concave up. Of course, these features now need to be computed from the input images and given as input to the neural network OCR system. In addition, the system is invariant to changes in font and point size, so it cannot classify beyond labeling an input bitmap as say an ?e?, when we may want additional information such as the font and point size, e.g.,?e?, point size: 12, font: Times Roman. The point is that features typically provide some level of invariance, but at the same time, limit the degree of recognition.
 
-TODO
+In this case, since there is wide variation in font definitions, we could first have an NN-based OCR system that is invariant to font and scale to recognize the character. Once we know it?s an ?e?, we can match it against all ?e? font definitions in our font database to establish the exact font and point size
 
-\subsection{Sovellus 1}
-
-TODO
-
-\subsection{Sovellus 2}
-
-TODO
-
-\subsection{Sovellus 3}
-
-TODO
 %TODO FIX TO BIBTEX
 \newpage
 \begin{thebibliography}{9}
 \bibitem{smori} 
 S. Mori, C. Y. Suen and K. Yamamoto. 
-\textit{"Historical review of OCR research and development,"} 
+\textit{"Historical review of OCR research and development"},
 in Proceedings of the IEEE, vol. 80, no. 7, pp. 1029-1058, Jul 1992.
 
 \bibitem{surveyov} 
 M. Sezgin and B. Sankur. 
-\textit{Survey over image thresholding techniques and quantitative performance evaluation}.
+\textit{"Survey over image thresholding techniques and quantitative performance evaluation"},
 Journal of Electronic Imaging 13(1), 146?165 (January 2004)
  
 \bibitem{ocrsite} 
@@ -168,6 +185,12 @@ Optical character recognition (OCR)
 L. O'Gorman, 
 \textit{"The document spectrum for page layout analysis,"} 
 in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 15, no. 11, pp. 1162-1173, Nov 1993.
+
+\bibitem{cvision} 
+OCR, Neural Networks and other Machine Learning Techniques
+\\\texttt{http://www.cvisiontech.com/resources/ocr-primer/ocr-neural-networks-and-other-machine-learning-techniques.html} 
+
+
 \end{thebibliography}
 %\bibliographystyle{tktl}
 %\bibliography{lahteet}

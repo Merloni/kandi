@@ -1,4 +1,4 @@
-\select@language {finnish}
+\babel@toc {finnish}{}
 \contentsline {section}{\numberline {1}Johdanto}{1}
 \contentsline {section}{\numberline {2}Merkintunnistus yleisesti}{1}
 \contentsline {subsection}{\numberline {2.1}Merkintunnistuksen historiaa}{1}
@@ -12,8 +12,7 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Sanantunnistus 1}{5}
 \contentsline {subsubsection}{\numberline {2.3.2}Sanantunnistus 2}{5}
 \contentsline {section}{\numberline {3}\"Alyk\"as merkin- ja sanantunnistus}{5}
-\contentsline {section}{\numberline {4}Koneoppimisen sovelluksia merkintunnistuksessa}{5}
-\contentsline {subsection}{\numberline {4.1}Sovellus 1}{5}
-\contentsline {subsection}{\numberline {4.2}Sovellus 2}{6}
-\contentsline {subsection}{\numberline {4.3}Sovellus 3}{6}
-\contentsline {section}{L\"ahteet}{7}
+\contentsline {subsection}{\numberline {3.1}Neuroverkot}{6}
+\contentsline {subsubsection}{\numberline {3.1.1}Neuroverkot fonttien opettelussa bittikartoilla}{6}
+\contentsline {subsubsection}{\numberline {3.1.2}Neuroverkot ominaisuuksien tunnistamisessa}{6}
+\contentsline {section}{L\"ahteet}{8}
